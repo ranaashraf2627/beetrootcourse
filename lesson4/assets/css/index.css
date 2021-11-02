@@ -1,0 +1,85 @@
+
+
+.container{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 218, 217);
+   font-family: 'Times New Roman', Times, serif;
+}
+
+
+.column{
+    
+    height:920px;
+    width: 820px;
+    background-color: rgb(236, 232, 232);
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+
+.leftcolumn{
+    float: left;
+    background-color: rgb(71, 71, 69);
+    width:300px ;
+    height: 910px;
+   padding: 5px;
+    color: white;
+   
+    
+}
+h2{
+  color: rgb(252, 158, 36);
+  font-weight: bolder;
+  text-align: center;
+}
+h1{
+  color: white;
+}
+h3 {
+  color: white;
+}
+ul{
+  list-style-type:none;
+  
+}
+.education{
+  color: brown;
+}
+
+.rightcolumn{
+float: right;
+width: 500px;
+height: 900px;
+background-color:white;
+padding: 5px;
+
+
+} 
+.rightheader{
+    font-weight: bold;
+    text-align: center;
+    height: 130px;
+    width:500px ;
+    background-color: rgb(252, 158, 36);
+    margin-left: 0px;
+    padding: 0;
+
+}
+img {
+  border-radius: 20%;
+ 
+}
+.leftimg{
+    display: flex;
+    justify-content: center;
+}
+.clip-star {
+  background: rgb(241, 168, 10);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  height: 15px;
+  width:15px;
+}

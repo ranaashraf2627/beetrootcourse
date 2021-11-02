@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online form</title>
+    <style>
+
+        body{
+            margin: 0;
+            
+    
+        }
+        .container{
+            width: 100vw;
+            height: 100vh ;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 1fr 1fr 40px;
+            gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+           
+            
+            
+        
+        }
+        .container div{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .big div{
+          border: 0px;
+
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(163, 163, 163);
+        }
+        a{
+            color: rgb(17, 17, 17);
+            font-weight: bolder;
+            padding: 20px;
+        }
+        .form{
+          
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(201, 199, 199);
+
+        }
+        h1 {
+  text-align: center;
+}
+input[type=text]{
+    width: 70%;
+    height: 30px;
+    border: 2px solid rgb(29, 25, 25);
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+  
+
+      
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=submit], input[type=checkbox]{
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  margin: 10px 60px;
+  cursor: pointer;
+
+  }
+  button[type=button] {
+    width:50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+      
+}
+
+
+        .calendar {
+    
+    width: 300px;
+    height: 300px;
+  }
+  .month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+  }
+  
+  /* Add media queries for smaller screens */
+  @media screen and (max-width: 720px) {
+    .weekdays li,
+    .days li {
+      width: 13.1%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li,
+    .days li {
+      width: 12.5%;
+    }
+    .days li .active {
+      padding: 2px;
+    }
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li,
+    .days li {
+      width: 12.2%;
+    }
+  }
+        
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            font-weight: bold;
+            background-color: gray;}
+
+            .flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+          
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+           
+                <img src="assets/img/butterfly.png" width="120px" height="120px">
+              
+
+            <a href="#">Rana</a>
+            <a href="#">Raluca</a>
+            <a href="#">Hassen</a>
+            <a href="#">Mirinka</a>
+          
+            
+        </div>
+
+<div class="form">
+    <h1 >Login</h1>
+    <form action="/action_page.php">
+        <label for="fname"><strong>First Name</strong></label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <br />
+        
+
+        <label for="lname"><strong>Last Name</strong></label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+        <br><br><br>
+
+        <input type="submit" value="Submit" />
+      
+      
+      <label class="check">
+
+        <input type="checkbox" checked="checked" /> Remember me 
+        <span class="checkmark"></span>
+      </label>
+    
+      <br>
+      <div class="big">
+      
+      <div class="flex-parent jc-center">
+      <button type="button" onclick="alert('Sign in with facebook')">
+        Sign in with Facebook
+      </button>
+    </div>
+      
+
+    <div class="flex-parent jc-center">
+      <button type="button" onclick="alert('Sign in with Google')">
+        Sign in with Google</button>
+      </div>
+    </div>
+    
+    </form>
+    
+</div>
+
+<div class="content1">
+   
+        
+
+        <div class="month">      
+        <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+            October<br>
+            <span style="font-size:18px">2021</span>
+            </li>
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+        </ul>
+
+        <ul class="days">  
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li><span class="active">21</span></li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        </ul>
+
+</div>
+<div class="content2">
+      
+                
+                <iframe
+                  src="https://www.youtube.com/embed/39YqCLYELnM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen 
+                ></iframe>
+              
+</div>
+
+
+
+
+<div class="footer">Copy Rights </div>
+
+
+
+    </div>
+    
+</body>
+</html>
