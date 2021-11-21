@@ -1,0 +1,176 @@
+.page {
+  width: 1500px;
+  height: 4042px;
+  margin: auto;
+  background-color: #f4f6f7;
+}
+.main {
+  max-width: 1440px;
+  max-height: 810px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f6f7;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.row {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 30px;
+  margin: 15px;
+}
+.column button {
+  width: 336px;
+  height: 60px;
+  background-color: #ff7f57;
+  color: white;
+  font-family: Avenir Next;
+  border: 0px;
+  font-size: 17px;
+}
+.column h4 {
+  color: blue;
+}
+
+.service-body {
+  background-color: white;
+  width: 1170px;
+  height: 430px;
+  margin: auto;
+}
+
+.services_head {
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+  background-color: white;
+}
+.services_head h4 {
+  color: blue;
+  text-align: center;
+  font-size: 10px;
+}
+.services_head p {
+  color: black;
+  text-align: center;
+  font-size: 38px;
+}
+
+.our-service {
+  display: flex;
+  justify-content: center;
+  max-width: 1170px;
+  max-height: 306px;
+  padding-left: 100px;
+  margin-bottom: 130px;
+  background-color: white;
+}
+.service:hover {
+  background-color: rgb(138, 138, 127);
+  color: rgb(43, 39, 43);
+}
+.service {
+  max-width: 370px;
+  max-height: 197px;
+
+  padding: 20px;
+}
+
+.h1 {
+  background-color: white;
+  text-align: center;
+  font-size: 38px;
+  font-family: Avenir Next;
+}
+
+.service h4 {
+  font-size: 20px;
+  font-family: Avenir Next;
+  color: #3b4d6c;
+  font-weight: bold;
+  text-align: center;
+}
+.service p {
+  font-size: 16px;
+  font-family: Avenir Next;
+  color: #13253a;
+  text-align: center;
+}
+.service img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: auto;
+}
+
+.kpi {
+  width: 1440px;
+  height: 205px;
+  display: flex;
+  justify-content: center;
+
+  background-color: #f4f6f7;
+}
+.kpi:hover {
+  background-color: rgb(138, 138, 127);
+  color: rgb(43, 39, 43);
+}
+.kpi > div {
+  padding-left: 80px;
+  line-height: 10px;
+}
+.kpifont {
+  font-size: 46px;
+  font-family: Avenir Next;
+}
+.kpi1 {
+  width: 211px;
+  height: 85px;
+  margin-top: 60px;
+}
+
+.kpi2 {
+  width: 147px;
+  height: 85px;
+  margin-top: 60px;
+}
+
+.kpi3 {
+  width: 135px;
+  height: 85px;
+  margin-top: 60px;
+}
+h5 {
+  font-size: 16px;
+  color: #2557ab;
+  font-family: Avenir Next;
+}
+
+.kpi span {
+  color: red;
+}
