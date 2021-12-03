@@ -1,0 +1,75 @@
+.container {
+  background-color: rgb(194, 194, 247);
+  padding-left: 180px;
+  padding-top: 40px;
+}
+
+.cards__wrapper {
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  /* display: flex;
+    justify-content:center ;
+    align-items: center; */
+}
+
+.card__title {
+  text-align: center;
+}
+
+.card__paragragh {
+  text-align: justify;
+  text-align: center;
+  line-height: 20px;
+  margin: 0px 70px 20px 70px;
+}
+
+.card__content {
+  background-color: rgb(196, 189, 189);
+
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+  margin: 40px;
+}
+
+.card__content--link {
+  padding-left: 110px;
+}
+
+.card__order--information {
+  padding-left: 40px;
+}
+
+.card__proceed--button {
+  width: 400px;
+
+  border-radius: 20px;
+
+  background-color: darkblue;
+  color: white;
+  padding: 15px;
+  margin: 20px;
+  border: none;
+}
+.card__cancel--button {
+  width: 400px;
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+}
