@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/ibs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="reset.cssW" />
+    <script
+      src="https://kit.fontawesome.com/a9f9ea356e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Form Practice</title>
+  </head>
+  <body>
+    <div>
+      <div class="title">
+        <h2>Register New Account</h2>
+      </div>
+      <form class="form" action="/action_page.php">
+        <label for="fname"> <i class="fas fa-user-circle"></i> Full Name</label>
+        <input
+          class="border"
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Full name"
+        />
+
+        <label for="email"><i class="fas fa-envelope"></i> Email </label>
+        <input
+          class="border"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+
+        <label for="pwd"><i class="fas fa-lock"></i> Password:</label>
+        <input
+          class="border"
+          type="password"
+          placeholder="Password"
+          id="password"
+          required
+        />
+
+        <label for="pwd"><i class="fas fa-lock"></i>Confirm Password</label>
+        <input
+          class="border"
+          type="password"
+          placeholder="Confirm Password"
+          id="confirm_password"
+          required
+        />
+
+        <label for="phone">
+          <i class="fas fa-phone-square-alt"></i> Phone number</label
+        >
+        <input
+          class="border"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="phone number"
+          required
+        />
+        <div class="check">
+          <input type="checkbox" value="RememberMe" id="rememberMe" />
+          <label for="RememberMe">Remember Me</label>
+        </div>
+        <div classclass="check">
+          <input type="checkbox" value="RememberMe" id="rememberMe" />
+          <label for="RememberMe">Subscribe to newsletter</label>
+        </div>
+
+        <button class="button" type="submit">REGISTER</button>
+      </form>
+    </div>
+  </body>
+</html>
