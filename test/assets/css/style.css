@@ -1,0 +1,202 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.block1 {
+  /* background-image: url("/assets/img/image1.png"); */
+
+  background-image: url("img1.png");
+  background-color: brown;
+
+  height: 821px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 1773px;
+  padding-top: 80px;
+}
+
+.block1__title {
+  margin: auto;
+  margin-top: 200px;
+  width: 372px;
+  height: 76px;
+
+  padding: 10px;
+}
+h1,
+p {
+  text-align: center;
+  color: white;
+  line-height: 10px;
+}
+
+.block1__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  margin-top: 10px;
+  color: #fff;
+  position: relative;
+}
+.search-box {
+  width: 503px;
+  height: 63px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+
+  font-size: 14px;
+  border: 0;
+  outline: none;
+}
+
+.search-button {
+  left: 990px;
+  top: 1.9px;
+
+  background-color: #5474fd;
+  position: absolute;
+
+  color: #fff;
+  width: 150px;
+  height: 61px;
+  outline: 0;
+  border: 0;
+}
+
+.block2 {
+  background-color: blue;
+  width: 1770px;
+  height: 83px;
+  color: white;
+}
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 1000px;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+
+.block3 {
+  width: 1773px;
+  height: 685px;
+
+  
+}
+
+.button {
+  background-color: #5474fd;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  width: 228px;
+  height: 63px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 50px 0px 330px;
+  cursor: pointer;
+}
+
+.block3__title {
+  color: white;
+  font-size: 36px;
+  margin: 212px 1152px 0px 330px;
+}
+.block3__parag {
+  color: #e8e8e8;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 50px 100px 0px 330px;
+}
+
+/* floating image block 3 */
+
+.houselake-img {
+  float: right;
+  height: 220px;
+  width: 350px;
+  clear: both;
+  margin-right: 409px;
+  margin-top: 92px;
+}
+.mountain-img {
+  float: right;
+  height: 220px;
+  width: 350px;
+  clear: both;
+  margin-right: 340px;
+  margin-top: 30px;
+}
+
+.block4 {
+  width: 1773px;
+  height: 340px;
+
+  background-color: #3333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block4__search {
+  width: 353px;
+  height: 163px;
+  color: white;
+  font-size: 36px;
+}
+
+.block4__select {
+  width: 200px;
+  height: 161px;
+  color: white;
+  font-size: 36px;
+}
+.block4__book {
+  width: 215px;
+  height: 174px;
+  color: white;
+  font-size: 36px;
+}
+
+.block5 {
+  width: 1773px;
+  height: 700px;
+
+  background-color: rgb(70, 69, 69);
+}
+.rectanglebox {
+  width: 543px;
+  height: 374px;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.5;
+  margin: 227px 899px 99px 328px;
+}
+.rectanglebox__button {
+  background-color: #5474fd;
+  border: none;
+  color: white;
+
+  text-align: center;
+  width: 228px;
+  height: 63px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+}
